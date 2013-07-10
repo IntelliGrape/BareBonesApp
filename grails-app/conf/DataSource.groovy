@@ -18,9 +18,16 @@ environments {
         }
     }
     test {
-        dataSource {
+	dataSource {
+            driverClassName = "com.mysql.jdbc.Driver"
             dbCreate = "update"
-            url = "jdbc:h2:mem:testDb;MVCC=TRUE"
+            url = "jdbc:mysql://localhost/BareBones_test"
+            username = "root"
+            password = "igdefault"
+            validationQuery = "SELECT 1"
+            properties {
+                validationQuery = "SELECT 1"
+            }
         }
     }
     production {
