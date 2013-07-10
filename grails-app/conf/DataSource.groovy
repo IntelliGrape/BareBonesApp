@@ -21,7 +21,7 @@ environments {
 	dataSource {
             driverClassName = "com.mysql.jdbc.Driver"
             dbCreate = "update"
-            url = "jdbc:mysql://localhost/BareBones_test"
+            url = "jdbc:mysql://localhost/barebones_test"
             username = "root"
             password = "igdefault"
             validationQuery = "SELECT 1"
